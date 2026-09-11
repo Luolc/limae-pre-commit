@@ -12,14 +12,14 @@ wheels from PyPI: this hook needs no Rust toolchain and compiles nothing.
 ```yaml
 repos:
   - repo: https://github.com/Luolc/limae-pre-commit
-    rev: v0.13.2  # the limae version to use; see the tags of this repository
+    rev: <tag>  # see the tags of this repository
     hooks:
       - id: limae
 ```
 
 `rev` is a tag of *this* repository, and each tag pins exactly one limae
-version — `v0.13.2` here installs `limae==0.13.2`. The tags are written by
-limae's own release workflow, so they track upstream releases one for one.
+version: `v0.13.2` installs `limae==0.13.2`. The tags are written by limae's
+own release workflow, so they track upstream releases one for one.
 
 To have limae rewrite what it can instead of only reporting it, add
 `args: ["--fix"]`. That is the one thing `args:` is for here — see below.
@@ -69,7 +69,7 @@ source and needs a Rust toolchain:
 ```yaml
 repos:
   - repo: https://github.com/Luolc/limae
-    rev: v0.13.2
+    rev: <tag>
     hooks:
       - id: limae
 ```
