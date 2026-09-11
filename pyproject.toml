@@ -1,0 +1,13 @@
+# The `limae` pin is rewritten by the `mirror` job of the release workflow in
+# Luolc/limae, on every version tag. Do not edit it by hand.
+#
+# The distribution name cannot be `limae`: this package depends on the real
+# `limae` from PyPI, and a package cannot depend on itself.
+[project]
+name = "limae-pre-commit"
+version = "0.0.0"
+dependencies = ["limae==0.13.2"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

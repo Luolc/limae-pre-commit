@@ -1,0 +1,18 @@
+# Hand-written; the release workflow never touches this file. Only the
+# `limae==` pin in pyproject.toml is generated.
+#
+# `language: python` is what makes this repository worth existing: pre-commit
+# has no "download a prebuilt binary" language, but it is itself written in
+# Python, so a Python environment is always at hand. `pip install .` here
+# pulls the limae wheel from PyPI, and that wheel carries the prebuilt binary
+# — no Rust toolchain, no compile.
+#
+# No `args:` here, and none in a consumer's .pre-commit-config.yaml either:
+# `--disable` / `--enable` replace the file configuration rather than adding
+# to it, and do so silently. See the README.
+- id: limae
+  name: Lint Markdown with limae
+  description: Check Markdown files against limae's Chinese typography rules.
+  entry: limae
+  language: python
+  files: \.md$
