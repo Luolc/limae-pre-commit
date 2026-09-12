@@ -6,7 +6,7 @@
 [project]
 name = "limae-pre-commit"
 version = "0.0.0"
-dependencies = ["limae==0.13.2"]
+dependencies = ["limae==0.13.3"]
 
 [build-system]
 requires = ["setuptools>=61"]
