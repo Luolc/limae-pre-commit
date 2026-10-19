@@ -6,9 +6,6 @@ request came in. This repository is read by pre-commit users in any ecosystem,
 so the Chinese default that applies to some of the owner's other repositories
 does not apply here.
 
-Cross-repository agent rules live in `~/.agents/AGENTS.md` and still hold; this
-file only states what is specific to this repository.
-
 ## What this repository is for
 
 One thing: letting `pre-commit` install limae from a prebuilt PyPI wheel
