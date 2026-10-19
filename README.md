@@ -1,5 +1,10 @@
 # limae-pre-commit
 
+> **Automated mirror: manual commits are not accepted.** The limae version pin
+> and the version tags in this repository are written only by limae's release
+> workflow. To change limae or its version, go to
+> [Luolc/limae](https://github.com/Luolc/limae).
+
 A [pre-commit](https://pre-commit.com/) hook for
 [limae](https://github.com/Luolc/limae), a Markdown linter that starts from
 Chinese technical-writing typography rules.
